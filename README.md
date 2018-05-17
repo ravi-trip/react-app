@@ -2442,3 +2442,21 @@ In the future, we might start automatically compiling incompatible third-party m
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+
+
+
+
+Basic Concepts:
+https://github.com/reduxjs/redux/blob/master/docs/introduction/CoreConcepts.md
+
+Enforcing that every change is described as an 'action' lets us have a clear understanding of what’s going on in the app.
+If something changed, we know why it changed.
+Actions are like breadcrumbs of what has happened.
+Finally, to tie state and actions together, we write a function called a reducer. 
+
+Reducers: are pure functions that specify how the application state has to change in response to a action.
+They take state and action as arguments, and returns the next state of the app.
+It would be hard to write such a function for a big app, so we write smaller functions managing parts of the state:
+
+
+
